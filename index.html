@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Curriculum Vitae</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../Mobile_First_CV/estilos.css"> 	  	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@500&display=block" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>	
+	<script src="https://kit.fontawesome.com/1254e356ae.js" crossorigin="anonymous"></script>
+	
+</head>
+<body>
+	<script src="../Mobile_First_CV/funciones.js"></script>
+	<div class="container-fluid">
+		<h1>Curriculum Vitae</h1>
+		<div class="dropdown">
+			<button id="desplegable" class="btn btn-primary btn-lg" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-bars fa-lg"></i><span class="menu-text" id="menuText"></span><div id="nombre"></div></button>
+			<ul class="dropdown-menu">
+				<li><button class="dropdown-item" type="button" onclick="abrirVinculo('Datos')">Datos</button></li>
+      			<li><button class="dropdown-item" type="button" onclick="abrirVinculo('Educación')">Educación</button></li>
+     	 		<li><button class="dropdown-item" type="button" onclick="abrirVinculo('Experiencia')">Experiencia</button></li>
+				<li><button class="dropdown-item" type="button" onclick="abrirVinculo('Habilidades')">Habilidades</button></li>
+				<li><button class="dropdown-item" type="button" onclick="abrirVinculo('Contacto')">Contacto</button></li>
+			</ul>
+		</div>
+		<div id="tabs">
+			
+			<button class="col-md-2" type="button" onclick="abrirVinculo('Datos')">Datos</button>
+			<button class="col-md-2" type="button" onclick="abrirVinculo('Educación')">Educación</button>
+			<button class="col-md-2" type="button" onclick="abrirVinculo('Experiencia')">Experiencia</button>
+			<button class="col-md-2" type="button" onclick="abrirVinculo('Habilidades')">Habilidades</button>
+			<button class="col-md-2" type="button" onclick="abrirVinculo('Contacto')">Contacto</button>
+			
+		</div>
+		<div class="container-fluid">
+			<div id="Datos" class="row" style="display:flex">
+				<div class="col-md-6" id="datos-personales">				
+					<p>						
+						<span>◦ Nombre completo:</span> Magdalena Zucal <br>									
+						<span>◦ Fecha de nacimiento:</span> 04/10/1991 <br>				
+						<span>◦ Lugar de residencia:</span>  Buenos Aires <br>
+						<span>◦ Nacionalidad:</span> Argentina
+						
+					</p>
+				</div>
+				<div class="col-md-6" id="foto">
+					<img src="../Mobile_First_CV/foto_perfil.jpg" style="width: 70%">
+				</div>
+			</div>
+			<div id="Educación" class="row" style="display:none">
+				<div class="col-md-12">
+					<p>						
+						<span>◦ 2022 ~</span> Curso "Primeros pasos en programación Front-End". Ticmas. <br>						
+						<span>◦ 2021 ~</span> Curso "Programacion Web .NET Core". Educación It. <br>			
+						<span>◦ 2016-2020 ~</span> Concurrencia en Psicología Clínica. Hospital Bernardino Rivadavia. <br>									
+						<span>◦ 2010-2015 ~</span> Licenciatura en Psicología. Universidad de Buenos Aires. <br>										
+						<span>◦ 2009-2010 ~</span> Bachiller en Humanidades. Jesus en el Huerto de los Olivos. <br>									
+						<span>◦ 2002-2009 ~</span> Bachiller. Colegio Lo Castillo. <br>
+											
+					</p>
+				</div>
+			</div>
+			<div id="Experiencia" class="row" style="display:none">
+				<div class="col-md-12" style="display: block;">
+					<p>						
+						<span>◦ 2016-2020 ~</span> Concurrencia en Psicología Clínica. Hospital Bernardino Rivadavia. <br>
+						<details>
+							<summary>Más información</summary>
+							<p id="detalles">						
+							⊙ Consultorios externos de Adultos. <br>
+							⊙ Interconsulta con otros departamentos del hospital. <br>
+							⊙ Trabajo conjunto con el Servicio de Ginecología y Obstetricia. <br>
+							⊙ Guardia de 12 y 24 horas. <br>
+							⊙ Internación de Adultos [Hospital Alvear de Emergencias Psiquiátricas]. <br>
+							⊙ Prevención y tratamiento de efectos negativos para la salud mental, en pacientes internados por 
+							la Emergencia de COVID 19. <br>
+							</p>						
+						</details>
+					</p>
+					<p>					
+						<span>◦ 2016-actual ~</span> Atención clínica de pacientes adolescentes y adultos, de forma particular.
+						<details>
+							<summary>Más información</summary>
+							<p id="detalles">						
+							⊙ Tratamiento de trastornos ansiedad, trastornos depresivos, trastornos de angustia, trastornos de los impulsos,
+							psicosis, abuso de sustancias, diversidad de género. 
+							</p>					
+						</details>
+					</p>
+				</div>
+			</div>
+			<div id="Habilidades" class="row" style="display:none">
+				<div class="col-md-6"> 
+					<p>					
+						<span>Habilidades Duras</span><br>						
+						◦ Ingles ~ <span>Nivel avanzado</span><br>									
+						◦ C# ~ <span>Nivel intermedio</span><br>						
+						◦ SQL ~ <span>Nivel intermedio</span><br>					
+						◦ Git ~ <span>Nivel intermedio</span><br>						
+						◦ .NET Core ~ <span>Nivel básico</span><br>						
+						◦ Diseño "Test Driven Design" ~ <span>Nivel básico</span><br>						
+						◦ Html, Css, JavaScript ~ <span>Nivel básico</span><br>
+					</p>
+				</div>
+				<div class="col-md-6"> 
+					<p>
+						<span>Habilidades Blandas</span><br>						
+						◦ Mediación y trabajo en equipo.<br>						
+						◦ Manejo de grupos de trabajo.<br>						
+						◦ Administración eficaz del tiempo.<br>						
+						◦ Proactividad e interés en aprender y estudiar.<br>						
+						◦ Interes en establecer una comunicación honesta y fluida con quien comparto espacios de trabajo. <br>	
+					</p>
+				</div>
+			  </div>			  
+			<div id="Contacto" class="row" style="display:none">
+				<div class="col-md-12">
+					<p>
+						<a href="https://wa.me/5491169235654"><i class="fa fa-whatsapp fa-w-14"></i>&nbsp;Whatsapp</a><br>
+						<a href="mailto:magdalenazucal@gmail.com"><i class="fa-regular fa-envelope"></i>&nbsp;Email</a><br>
+						<a href="https://telegram.me/magdalenazucal"><i class="fa-regular fa-paper-plane"></i>&nbsp; Telegram</a><br>
+						<a href="https://github.com/memizucal"><i class="fa fa-github"></i>&nbsp; GitHub</a><br>
+					</p>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</body>
+</html>
