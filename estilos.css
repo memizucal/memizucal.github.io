@@ -13,7 +13,7 @@
 	}
 	
 	body{
-		background-image: url(img/bgimage2.jpg);
+		background-image: url(./img/bgimage.jpg);
 		background-position: center center;
 		background-repeat: no-repeat;
 		background-attachment: fixed;		
@@ -219,7 +219,7 @@
 	}
 	
 	body{
-		background-image: url(img/bgimage.jpg);
+		background-image: url(./img/bgimage.jpg);
 		background-position: center center;
 		background-repeat: no-repeat;
 		background-attachment: fixed;		
